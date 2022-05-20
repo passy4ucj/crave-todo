@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title> ToDo App </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100"     rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+  </head>
+<body>
+  <div class="container">
+<h2> A Simple ToDo List App </h2>
+<form action ="/addtask" method="POST">
+       <input type="text" name="category" placeholder="add new Category">   
+       <input type="text" name="todo" placeholder="add new task">  
+       <button> Add Task </button>
+</form>
+<h2> Added Task </h2>
+   <% for( var i = 0; i < task.length; i++){ %>
+<li><input type="checkbox" name="check" value="<%= task[i].todo %>" /> Category - <%= task[i].category %> || Todo - <%= task[i].todo %> </li>
+<% } %>
+</div>
+</body>
+</html>
