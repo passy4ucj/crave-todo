@@ -86,7 +86,7 @@ const updateTask = async (req, res) => {
     }
 }
 
-
+// get all tasks in a category
 const getCategoryTasks = async (req, res) => {
 
     if(!req.params.category) {
