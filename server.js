@@ -33,6 +33,8 @@ if(process.env.NODE_ENV === 'development') {
 }
 
 
+// Render tasks using ejs template engines
+
 // Mount routers
 app.use('/', tasks)
 
